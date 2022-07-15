@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="userconteiner" *ngFor="let userInfo of usersList; let i = index">
+    <a href="" *ngIf="i + 1 != usersList.length" > 
+      <img [src]="userInfo.imageUrl" [title]="userInfo.name" [width]="270" />
+      <h1 class="username">{{ userInfo.name }}</h1>
+      <p class="usertitle">{{ userInfo.title }}</p>
+    </a>
+
+    <a href="" *ngIf="i + 1 === usersList.length"  #lastElement>
+      <img [src]="userInfo.imageUrl" [title]="userInfo.name" [width]="270" />
+      <h1 class="username">{{ userInfo.name }}</h1>
+      <p class="usertitle">{{ userInfo.title }}</p>
+    </a>
+  </div>
+</div>

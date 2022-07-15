@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.userconteiner {
+    padding-bottom: 5px;
+    margin: 5px;
+    background-color: #ffc4ad;
+    border-radius: 5px;
+}
+
+.username {
+    margin-left: 15px;
+    margin-bottom: 0px;
+    font-size: 1.5rem;
+}
+
+.usertitle {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
